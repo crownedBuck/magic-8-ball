@@ -16,16 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ask Me..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sid-Kv-ozG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sid-Kv-ozG">
                                 <rect key="frame" x="100" y="95" width="193" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6co-n8-gBM">
-                                <rect key="frame" x="147" y="645" width="99" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6co-n8-gBM">
+                                <rect key="frame" x="156" y="645" width="81" height="72"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -36,13 +34,20 @@
                                     <action selector="askAQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8tQ-6X-vx3"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball5" translatesAutoresizingMaskIntoConstraints="NO" id="YoU-Jt-1rK">
-                                <rect key="frame" x="27" y="208" width="339" height="329"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball5" translatesAutoresizingMaskIntoConstraints="NO" id="YoU-Jt-1rK">
+                                <rect key="frame" x="44" y="208.00000000000003" width="305" height="273.66666666666674"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.85735959422831631" green="0.10635566140518711" blue="0.68164839764030616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sid-Kv-ozG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="Pqf-c5-JHn"/>
+                            <constraint firstItem="Sid-Kv-ozG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rdd-Fp-sJ6"/>
+                            <constraint firstItem="6co-n8-gBM" firstAttribute="top" secondItem="YoU-Jt-1rK" secondAttribute="bottom" constant="163.33000000000001" id="Ruw-P6-5va"/>
+                            <constraint firstItem="6co-n8-gBM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jgr-EG-ovQ"/>
+                            <constraint firstItem="YoU-Jt-1rK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rXd-rS-0Tm"/>
+                            <constraint firstItem="YoU-Jt-1rK" firstAttribute="top" secondItem="Sid-Kv-ozG" secondAttribute="bottom" constant="53" id="vhM-Ad-rWk"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="eightBallImageView" destination="YoU-Jt-1rK" id="rt5-29-RjL"/>
